@@ -1,0 +1,63 @@
+.container{
+  width:850px;
+  height:1150px;
+  display: grid;
+  grid-template-rows: 1fr  3fr 30px;
+  grid-template-columns: 1.3fr 2fr;
+  margin: 50px auto; 
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+blockquote{
+  margin:20px;
+  font-size: 15px;
+}
+h5{
+  margin: 5px 0px;
+}
+.foto{
+  clip-path: circle(43.1% at 50% 50%);
+  width: 160px;
+}
+.titule h4{
+  margin:0px;
+  padding: 5px;
+  line-height: 1.1;
+  color: #e3fafc;
+  
+}
+li p{
+  font-size: 14px;
+}
+.datos-ul{
+  list-style-image: url("/resources/caret-circle-right-fill.svg");
+  font-size: 15px;
+}
+.card{
+  text-align: justify;
+  padding: 20px;
+  
+}
+.resumen-row{
+  grid-column: 3/-2;
+}
+.Subtitulos{
+  border-bottom-right-radius: 50%; 
+  padding:10px;
+  background-color:#3bc9db;
+  display: inline-block;
+  margin: 15px 10px 0px;
+  color: white;
+}
+.titule{
+  background-color: #3bc9db;
+  border-radius: 5px;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.style-footer{
+  background-color:#3bc9db;
+  grid-column: 1/ -1;
+  grid-row: 3;
+}
