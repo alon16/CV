@@ -42,6 +42,11 @@
     flex-direction: column;
     gap:1.6rem;
 }
+.list-item{
+    font-size: 1.6rem;
+    display: inline-block;
+    line-height: 1.2;
+}
 html{
     font-size: 62.5%;
 }
@@ -67,7 +72,12 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     font-size:1.8rem;
-    margin-bottom: 1.6rem;
+    margin-bottom: 3rem;
+}
+.card{
+    box-shadow: 0 1px 2px rgba(0, 0,0,0.1);
+    margin:9.6rem 4.6rem;
+    border-radius:2%
 
 }
 
@@ -125,10 +135,12 @@ body{
 *       SECTION EXPERIENCE       *
 **************************** */
 .section-experience{
-    
     padding: 3.8rem  9.6rem ;
     display: flex;
     gap: 9.4rem;
+}
+.card-experience-color{
+    background-color:rgba(235, 251, 252, 0.458);
 }
 .section-experience .subtitulo{
     align-self: center;
@@ -139,7 +151,6 @@ body{
 .experience-box{
     padding: 4rem;
     justify-content: center;
-    /* box-shadow: 0 2px 2px rgba(0, 0,0,0.1); */
     /* box-shadow: -10px 20px 108px -24px rgba(0,0,0,0.23); */
     border-radius: 1%;
     max-width:36rem;
@@ -168,9 +179,88 @@ body{
 /* ****************************
 *       SECTION EDUCATION AND SKILLS       *
 **************************** */
-.section-education-skill{
-    
-    padding: 0 9.6rem ;
+.section-education-skill{    
+    padding: 5rem 9.6rem ;
+    grid-template-columns: 2fr 1.5fr 1fr;
+    margin-bottom: 1.2rem;
+    column-gap: 1.1rem;
+}
+.list-icon{
+    width: 2rem;
+    height: 2rem;
+
+}
+.secundary-info{
+    font-size: 1.1rem;
+    padding: 3rem;
+    font-weight: 700;
+    color: #333;
+}
+.skill-list-grid{
+    margin-top:6rem;
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    row-gap: 2rem;
+    font-size:1.4rem;
+}
+.icon-skill{
+    width: 13%;
+    padding-bottom: 13%;
+    border-radius: 20%;
+    display: inline-block;
+
+}
+.color-sky{
+    background-color:#a5d8ff;
+}
+.color-grape{
+    background-color:#f3d9fa;
+}
+.color-violet{
+    background-color: #e5dbff;
+}
+.color-indigo{
+    background-color: #dbe4ff;
+}
+.color-green{
+    background-color:#d3f9d8;
+}
+.color-lime{
+    background-color:#e9fac8;
+}
+.color-yellow{
+    background-color:#fff3bf;
+}
+.color-orange{
+    background-color:#ffd8a8;
+}
+/* ****************************
+*       SECTION CONTACTS    *
+**************************** */
+
+.section-contacts{
+    padding: 3.8rem 9.6rem ;
     display: flex;
-    gap: 9.4rem;
+    gap: 6rem;
+    line-height:1.2;
+
+}
+.contact{
+    font-size: 1.6rem;
+    display: inline-block;
+    text-align: center;
+
+}
+.contact-name{
+    font-weight:700;
+    display: inline-block;
+}
+.contact-number{
+    line-height:4;
+}
+.card-contact-color{
+    /* background-color:rgba(255, 243, 191, 0.543); */
+    background-color: rgba(243, 217, 250, 0.2);
 }
