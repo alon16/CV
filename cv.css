@@ -21,11 +21,6 @@
     column-gap: 6.4rem;
     row-gap: 9.6rem;
 }
-
-.grid:not(:last-child){
-    margin-bottom: 9.6rem;
-
-}
 .grid-center-v{
     align-items: center;
 }
@@ -40,6 +35,12 @@
 }
 .grid-5-cols{
     grid-template-columns: repeat(5,1fr);
+}
+.list{
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    gap:1.6rem;
 }
 html{
     font-size: 62.5%;
@@ -56,13 +57,26 @@ body{
     color:#555;
     background-color:#ccf4f9;
 }
+.titule{
+    font-size:2.4rem;
+    font-weight:900;
+    margin-bottom: 0.8rem;
+}
+.subtitulo{
+    color:#1c7ed6;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:1.8rem;
+    margin-bottom: 1.6rem;
+
+}
 
 /* ****************************
 *       SECTION PROFILE       *
 **************************** */
 .section-profile{
     margin-top:9.6rem;
-    padding: 4.8rem 0 9.6rem 0;
+    padding: 4.8rem ;
     position: relative;
     overflow: hidden;
 }
@@ -103,20 +117,60 @@ body{
     /* box-shadow: 0 2px 2px rgba(0, 0,0,0.1); */
     box-shadow: -10px 20px 108px -24px rgba(0,0,0,0.23);
     max-width: 70rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-align: justify;
     line-height: 1.5;
 }
-.titule{
-    font-size:2.4rem;
-    font-weight:900;
-    margin-bottom: 0.8rem;
+/* ****************************
+*       SECTION EXPERIENCE       *
+**************************** */
+.section-experience{
+    
+    padding: 3.8rem  9.6rem ;
+    display: flex;
+    gap: 9.4rem;
 }
-.subtitulo{
-    color:#1c7ed6;
+.section-experience .subtitulo{
+    align-self: center;
+}
+.experiences{
+    row-gap: 2rem;
+}
+.experience-box{
+    padding: 4rem;
+    justify-content: center;
+    /* box-shadow: 0 2px 2px rgba(0, 0,0,0.1); */
+    /* box-shadow: -10px 20px 108px -24px rgba(0,0,0,0.23); */
+    border-radius: 1%;
+    max-width:36rem;
+}
+.tag{
+    display:inline-block;
     font-weight: 700;
-    text-transform: uppercase;
-    font-size:1.8rem;
-    margin-bottom: 1.6rem;
+    background-color:#a5d8ff;
+    padding: 0.4rem 0.8rem;
+    color: #333;
+    border-radius: 100px;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+}
+.experience-text{
+    text-align: justify;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1.8;
 
+}
+.experiences :last-child{
+        grid-column: 1 / -1;
+        justify-self: center;
+}
+/* ****************************
+*       SECTION EDUCATION AND SKILLS       *
+**************************** */
+.section-education-skill{
+    
+    padding: 0 9.6rem ;
+    display: flex;
+    gap: 9.4rem;
 }
